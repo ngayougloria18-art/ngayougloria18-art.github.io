@@ -1,0 +1,624 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Portfolio de Gloria NGAYOU, étudiante en informatique et intelligence artificielle à HESTIM Casablanca.">
+    <meta name="theme-color" content="#080b16">
+
+    <title>Gloria NGAYOU | Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Barre de navigation -->
+    <header class="header" id="header">
+        <nav class="navbar container" aria-label="Navigation principale">
+
+            <a href="#accueil" class="logo">
+                G<span>.</span>N
+            </a>
+
+            <button class="menu-toggle"
+                    id="menu-toggle"
+                    aria-label="Ouvrir le menu"
+                    aria-expanded="false"
+                    aria-controls="nav-links">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#accueil" class="nav-link active">Accueil</a></li>
+                <li><a href="#apropos" class="nav-link">À propos</a></li>
+                <li><a href="#competences" class="nav-link">Compétences</a></li>
+                <li><a href="#projets" class="nav-link">Projets</a></li>
+                <li><a href="#parcours" class="nav-link">Parcours</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+
+            <a href="#contact" class="nav-cta">
+                Me contacter <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Accueil -->
+        <section class="hero section" id="accueil">
+            <div class="hero-glow glow-one"></div>
+            <div class="hero-glow glow-two"></div>
+
+            <div class="container hero-grid">
+
+                <div class="hero-content reveal">
+
+                    <div class="availability">
+                        <span class="status-dot"></span>
+                        Étudiante en informatique & IA
+                    </div>
+
+                    <p class="eyebrow">BONJOUR, JE SUIS</p>
+
+                    <h1>
+                        Gloria<br>
+                        <span class="gradient-text">NGAYOU.</span>
+                    </h1>
+
+                    <h2 class="hero-subtitle">
+                        Future ingénieure en
+                        <span id="typing-text">intelligence artificielle</span>
+                        <span class="cursor">|</span>
+                    </h2>
+
+                    <p class="hero-description">
+                        Étudiante en première année de cycle préparatoire
+                        en informatique et intelligence artificielle à
+                        HESTIM School Casablanca. Je construis mes
+                        compétences, j'explore les nouvelles technologies
+                        et je transforme ma curiosité en projets concrets.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <a href="#projets" class="btn btn-primary">
+                            Découvrir mes projets
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                        <a href="#contact" class="btn btn-secondary">
+                            Parlons ensemble
+                        </a>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/gloria-ngayou-158621442/"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           aria-label="LinkedIn">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+
+                        <a href="https://github.com/"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           aria-label="GitHub">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+
+                        <a href="#contact" aria-label="Email">
+                            <i class="fa-regular fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Illustration technologique -->
+                <div class="hero-visual reveal">
+                    <div class="orbit orbit-one"></div>
+                    <div class="orbit orbit-two"></div>
+
+                    <div class="profile-card">
+                        <div class="profile-top">
+                            <span class="window-dot"></span>
+                            <span class="window-dot"></span>
+                            <span class="window-dot"></span>
+                            <span class="profile-label">gloria.dev</span>
+                        </div>
+
+                        <div class="profile-icon">
+                            <i class="fa-solid fa-brain"></i>
+                        </div>
+
+                        <p class="code-line"><span>const</span> future = {</p>
+                        <p class="code-line indent">passion: <em>"Technology"</em>,</p>
+                        <p class="code-line indent">field: <em>"AI & IT"</em>,</p>
+                        <p class="code-line indent">mindset: <em>"Always learning"</em></p>
+                        <p class="code-line">};</p>
+
+                        <div class="profile-footer">
+                            <i class="fa-solid fa-circle-check"></i>
+                            Learning by building
+                        </div>
+                    </div>
+
+                    <div class="floating-badge badge-ai">
+                        <i class="fa-solid fa-brain"></i>
+                        <span>Artificial Intelligence</span>
+                    </div>
+
+                    <div class="floating-badge badge-code">
+                        <i class="fa-solid fa-code"></i>
+                        <span>Creative coding</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <a href="#apropos" class="scroll-indicator">
+                <span>Explorer</span>
+                <i class="fa-solid fa-arrow-down"></i>
+            </a>
+        </section>
+
+        <!-- À propos -->
+        <section class="section about-section" id="apropos">
+            <div class="container">
+
+                <div class="section-heading reveal">
+                    <p class="eyebrow">QUI SUIS-JE ?</p>
+                    <h2>Un esprit curieux,<br><span class="gradient-text">une ambition sans limites.</span></h2>
+                    <p>
+                        Apprendre aujourd'hui, créer les solutions de demain.
+                    </p>
+                </div>
+
+                <div class="about-grid">
+
+                    <div class="about-text reveal">
+                        <p>
+                            Je suis Gloria NGAYOU, étudiante en première
+                            année de cycle préparatoire en informatique et
+                            intelligence artificielle à HESTIM School,
+                            à Casablanca.
+                        </p>
+
+                        <p>
+                            Mon parcours est guidé par la curiosité,
+                            l'envie de comprendre les technologies et
+                            la volonté de développer des solutions utiles.
+                            Je m'intéresse au développement informatique,
+                            à la programmation et aux possibilités offertes
+                            par l'intelligence artificielle.
+                        </p>
+
+                        <p>
+                            À travers ce portfolio, je souhaite partager
+                            mon évolution, présenter mes réalisations et
+                            documenter les compétences que je développe
+                            au fil de ma formation.
+                        </p>
+
+                        <a href="#parcours" class="text-link">
+                            Découvrir mon parcours
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+
+                    <div class="about-cards reveal">
+
+                        <article class="info-card">
+                            <div class="info-icon">
+                                <i class="fa-solid fa-graduation-cap"></i>
+                            </div>
+                            <h3>Formation</h3>
+                            <p>Cycle préparatoire informatique & IA</p>
+                        </article>
+
+                        <article class="info-card">
+                            <div class="info-icon">
+                                <i class="fa-solid fa-lightbulb"></i>
+                            </div>
+                            <h3>État d'esprit</h3>
+                            <p>Curiosité, créativité et apprentissage continu</p>
+                        </article>
+
+                        <article class="info-card">
+                            <div class="info-icon">
+                                <i class="fa-solid fa-laptop-code"></i>
+                            </div>
+                            <h3>Centres d'intérêt</h3>
+                            <p>Programmation, technologies et IA</p>
+                        </article>
+
+                        <article class="info-card">
+                            <div class="info-icon">
+                                <i class="fa-solid fa-rocket"></i>
+                            </div>
+                            <h3>Objectif</h3>
+                            <p>Progresser et concevoir des projets utiles</p>
+                        </article>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Compétences -->
+        <section class="section" id="competences">
+            <div class="container">
+
+                <div class="section-heading reveal">
+                    <p class="eyebrow">MON UNIVERS TECHNIQUE</p>
+                    <h2>Les outils que j'apprends<br><span class="gradient-text">pour construire demain.</span></h2>
+                    <p>
+                        Une base technique en développement, enrichie
+                        progressivement au cours de ma formation.
+                    </p>
+                </div>
+
+                <div class="skills-grid">
+
+                    <article class="skill-card reveal">
+                        <div class="skill-card-header">
+                            <div class="skill-icon html-icon">
+                                <i class="fa-brands fa-html5"></i>
+                            </div>
+                            <span class="skill-level">À personnaliser</span>
+                        </div>
+                        <h3>HTML5</h3>
+                        <p>Structure et organisation des pages web.</p>
+                        <div class="skill-track">
+                            <span style="--skill-width: 65%"></span>
+                        </div>
+                    </article>
+
+                    <article class="skill-card reveal">
+                        <div class="skill-card-header">
+                            <div class="skill-icon css-icon">
+                                <i class="fa-brands fa-css3-alt"></i>
+                            </div>
+                            <span class="skill-level">À personnaliser</span>
+                        </div>
+                        <h3>CSS3</h3>
+                        <p>Design, mise en page et responsive design.</p>
+                        <div class="skill-track">
+                            <span style="--skill-width: 55%"></span>
+                        </div>
+                    </article>
+
+                    <article class="skill-card reveal">
+                        <div class="skill-card-header">
+                            <div class="skill-icon js-icon">
+                                <i class="fa-brands fa-js"></i>
+                            </div>
+                            <span class="skill-level">À personnaliser</span>
+                        </div>
+                        <h3>JavaScript</h3>
+                        <p>Interactions et dynamisme des interfaces.</p>
+                        <div class="skill-track">
+                            <span style="--skill-width: 35%"></span>
+                        </div>
+                    </article>
+
+                    <article class="skill-card reveal">
+                        <div class="skill-card-header">
+                            <div class="skill-icon python-icon">
+                                <i class="fa-brands fa-python"></i>
+                            </div>
+                            <span class="skill-level">Selon ton niveau</span>
+                        </div>
+                        <h3>Python</h3>
+                        <p>Programmation et exploration des données.</p>
+                        <div class="skill-track">
+                            <span style="--skill-width: 25%"></span>
+                        </div>
+                    </article>
+
+                </div>
+
+                <div class="tech-note reveal">
+                    <i class="fa-solid fa-circle-info"></i>
+                    Les barres sont des exemples de présentation, pas une
+                    évaluation réelle de ton niveau. Ajuste-les selon tes
+                    compétences actuelles et les technologies effectivement
+                    étudiées.
+                </div>
+
+                <div class="tools-strip reveal">
+                    <span>Technologies & outils</span>
+                    <div class="tool-item"><i class="fa-brands fa-git-alt"></i> Git</div>
+                    <div class="tool-item"><i class="fa-brands fa-github"></i> GitHub</div>
+                    <div class="tool-item"><i class="fa-solid fa-terminal"></i> Terminal</div>
+                    <div class="tool-item"><i class="fa-solid fa-code"></i> VS Code</div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Projets -->
+        <section class="section projects-section" id="projets">
+            <div class="container">
+
+                <div class="section-heading reveal">
+                    <p class="eyebrow">CE QUE JE CONSTRUIS</p>
+                    <h2>Des idées qui deviennent<br><span class="gradient-text">des réalisations.</span></h2>
+                    <p>
+                        Quelques exemples de projets à présenter. Remplace
+                        ces modèles par tes véritables réalisations.
+                    </p>
+                </div>
+
+                <div class="projects-grid">
+
+                    <article class="project-card reveal">
+                        <div class="project-visual visual-portfolio">
+                            <div class="project-window">
+                                <div class="window-bar">
+                                    <span></span><span></span><span></span>
+                                </div>
+                                <div class="mockup-content">
+                                    <div class="mockup-line long"></div>
+                                    <div class="mockup-line medium"></div>
+                                    <div class="mockup-blocks">
+                                        <span></span><span></span><span></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="project-number">01</span>
+                        </div>
+
+                        <div class="project-info">
+                            <div class="project-tags">
+                                <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                            </div>
+                            <h3>Mon portfolio personnel</h3>
+                            <p>
+                                Un site web responsive pour présenter mon
+                                parcours, mes compétences et mes projets.
+                            </p>
+                            <div class="project-links">
+                                <a href="https://github.com/" target="_blank"
+                                   rel="noopener noreferrer">
+                                    Code source <i class="fa-brands fa-github"></i>
+                                </a>
+                                <span class="project-status">En développement</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card reveal">
+                        <div class="project-visual visual-ai">
+                            <div class="ai-illustration">
+                                <i class="fa-solid fa-brain"></i>
+                                <span class="ai-orbit ai-orbit-one"></span>
+                                <span class="ai-orbit ai-orbit-two"></span>
+                            </div>
+                            <span class="project-number">02</span>
+                        </div>
+
+                        <div class="project-info">
+                            <div class="project-tags">
+                                <span>Python</span><span>IA</span>
+                            </div>
+                            <h3>Exploration de l'intelligence artificielle</h3>
+                            <p>
+                                Un futur projet d'apprentissage pour découvrir
+                                les concepts fondamentaux de l'IA et du
+                                traitement des données.
+                            </p>
+                            <div class="project-links">
+                                <a href="#contact">
+                                    En savoir plus <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                                <span class="project-status">Idée de projet</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card reveal">
+                        <div class="project-visual visual-web">
+                            <div class="web-illustration">
+                                <i class="fa-solid fa-layer-group"></i>
+                                <i class="fa-solid fa-mobile-screen-button"></i>
+                                <i class="fa-solid fa-display"></i>
+                            </div>
+                            <span class="project-number">03</span>
+                        </div>
+
+                        <div class="project-info">
+                            <div class="project-tags">
+                                <span>Web</span><span>UI/UX</span>
+                            </div>
+                            <h3>Une interface web interactive</h3>
+                            <p>
+                                Un concept d'interface moderne à développer
+                                pour mettre en pratique le design responsive
+                                et les interactions côté client.
+                            </p>
+                            <div class="project-links">
+                                <a href="#contact">
+                                    Découvrir <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                                <span class="project-status">À réaliser</span>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+
+                <p class="projects-disclaimer">
+                    Les projets 02 et 03 sont des idées de démonstration,
+                    et non des réalisations déjà terminées.
+                </p>
+
+                <div class="projects-cta reveal">
+                    <p>Tu souhaites voir mes prochaines réalisations ?</p>
+                    <a href="https://github.com/" target="_blank"
+                       rel="noopener noreferrer" class="btn btn-secondary">
+                        Retrouve-moi sur GitHub
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Parcours -->
+        <section class="section" id="parcours">
+            <div class="container">
+
+                <div class="section-heading reveal">
+                    <p class="eyebrow">MON ÉVOLUTION</p>
+                    <h2>Un parcours en<br><span class="gradient-text">construction.</span></h2>
+                    <p>
+                        Chaque étape est une occasion d'apprendre,
+                        de pratiquer et de progresser.
+                    </p>
+                </div>
+
+                <div class="timeline">
+
+                    <article class="timeline-item reveal">
+                        <div class="timeline-marker">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">En cours</span>
+                            <h3>Cycle préparatoire en informatique et IA</h3>
+                            <h4>HESTIM School · Casablanca, Maroc</h4>
+                            <p>
+                                Première année de formation préparatoire,
+                                avec un intérêt particulier pour l'informatique,
+                                la programmation et l'intelligence artificielle.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="timeline-item reveal">
+                        <div class="timeline-marker">
+                            <i class="fa-solid fa-code"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">En progression</span>
+                            <h3>Apprentissage et projets personnels</h3>
+                            <h4>Développement de compétences techniques</h4>
+                            <p>
+                                Mise en pratique des connaissances à travers
+                                la création de pages web, des exercices de
+                                programmation et des projets personnels.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="timeline-item reveal">
+                        <div class="timeline-marker">
+                            <i class="fa-solid fa-bullseye"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">Objectif futur</span>
+                            <h3>Développer mon expertise technologique</h3>
+                            <h4>Informatique · Intelligence artificielle</h4>
+                            <p>
+                                Approfondir mes connaissances, construire
+                                des projets plus avancés et découvrir les
+                                applications concrètes des nouvelles technologies.
+                            </p>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section class="section contact-section" id="contact">
+            <div class="container">
+
+                <div class="contact-panel reveal">
+
+                    <div class="contact-content">
+                        <p class="eyebrow">TRAVAILLONS ENSEMBLE</p>
+                        <h2>Une idée, une question ?<br>
+                            <span class="gradient-text">Faisons connaissance.</span>
+                        </h2>
+
+                        <p>
+                            Je suis ouverte aux échanges autour de
+                            l'informatique, des projets étudiants,
+                            de l'apprentissage et des nouvelles technologies.
+                        </p>
+
+                        <a href="https://www.linkedin.com/in/gloria-ngayou-158621442/"
+                           target="_blank" rel="noopener noreferrer"
+                           class="btn btn-primary">
+                            Me retrouver sur LinkedIn
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+
+                        <div class="contact-socials">
+                            <a href="https://github.com/" target="_blank"
+                               rel="noopener noreferrer"
+                               aria-label="GitHub">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/gloria-ngayou-158621442/"
+                               target="_blank" rel="noopener noreferrer"
+                               aria-label="LinkedIn">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="contact-decoration">
+                        <div class="contact-orb">
+                            <i class="fa-regular fa-paper-plane"></i>
+                        </div>
+                        <div class="contact-decoration-text">
+                            <span>Let's connect</span>
+                            <p>Ideas · Code · Innovation</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Pied de page -->
+    <footer class="footer">
+        <div class="container footer-inner">
+            <a href="#accueil" class="logo">G<span>.</span>N</a>
+
+            <p>
+                Conçu avec <i class="fa-solid fa-heart"></i> et beaucoup
+                de curiosité par Gloria NGAYOU.
+            </p>
+
+            <span class="footer-year">
+                © <span id="year"></span> · Tous droits réservés
+            </span>
+        </div>
+    </footer>
+
+    <button id="back-to-top" class="back-to-top"
+            aria-label="Retour en haut">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+</body>
+</html>
